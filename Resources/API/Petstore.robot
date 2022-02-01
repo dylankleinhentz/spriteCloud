@@ -10,7 +10,7 @@ ${url}    https://petstore.swagger.io/v2
 *** Keywords ***
 Available Pets
     #GET Request
-    ${response}=      GE  url=${url}/pet/findByStatus?status=available
+    ${response}=      GET  url=${url}/pet/findByStatus?status=available
     #Validate Response
     Status Should Be    200
 
