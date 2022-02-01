@@ -52,8 +52,28 @@ One new feature:
 - Add a dashboard page functionallity wheres a user can manage (Add, Remove, Edit) the panels displayed on the dashboard. 
 
 # E. What you used to select the scenarios, what was your approach?
+UI Test cases:
+For the purpose of this assignment, only the Chrome browser was used for UI automation testing.
+UI testing involves making sure the user interface handles keyboard and mouse interactions, and checking that visual elements are displayed and working correctly.
+Therefore the focus for this assignment was to automate:
+- Specifc tab links present on the home page and the content within those tabs.
+- The visual images displayed such as the rubics cube, quotes, headers and sub headers.
+
+API Test cases:
+For the purpose of the Petstore swagger, the most important API test scenarios were the following:
+- Adding a new user
+- Checking pet statuses (available, pending, sold)
+- Adding a new pet
 
 # F. Why are they the most important
+UI Test cases:
+Making sure the user interface handles keyboard and mouse interactions is high priority, therefore testing specifc tab links present on the home page and the content within is highly important.
+Checking that visual elements are displayed and working correctly is critical to a successful user interface. Those specific elements should always be working and in the correct location with no grammer mistakes and visual bugs.
+
+API Test cases:
+Adding a new user to the Petstore system is seen as a high priority. Without a new user being added, users will not be able to view or manages pets.
+Checking the status of pets in the Petstore system is also highly important due to the reason that users will need to search for pet avalibility.
+Adding a new pet is also critical for users when having to update the Petstore system database.
 
 # G. What could be the next steps to your project
 Next steps to the spriteCloud project would be:
