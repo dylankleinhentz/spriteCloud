@@ -29,6 +29,8 @@ b. How to run the test in a CI/CD pipeline;
 c. Has a link to the results in Calliope.pro;
 
 d. Describe one improvement point and one new feature for the Calliope.pro platform;
+Improvement:
+- No login link ontop of Calliope.org home page, only a signup. Login link only at the bottom of page.
 
 e. What you used to select the scenarios, what was your approach?;
 
