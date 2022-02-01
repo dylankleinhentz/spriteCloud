@@ -5,10 +5,11 @@ Library    SeleniumLibrary
 #Suite Setup    Create Session    petstore    url=https://petstore.swagger.io/v2/pet/findByStatus
 *** Variables ***
 ${LOGIN URL}      http://www.uitestingplayground.com
-${BROWSER}        Chrome
+${BROWSER}        chrome
+
 
 *** Keywords ***
-Click on UITAP tab
+Click on UITAP tab in chrome browser
         [Documentation]    Validate that the UITAP tab is clickable and navigates to the main page
         [Tags]    Functional Test
 
@@ -29,7 +30,7 @@ Click on UITAP tab
         #Post condition
         close browser
 
-Click on Home tab
+Click on Home tab in chrome browser
         [Documentation]    Validate that the Home tab is clickable and navigates to the main page
         [Tags]    Functional Test
 
@@ -50,7 +51,7 @@ Click on Home tab
         #Post condition
         close browser
 
-Click on Resources tab
+Click on Resources tab in chrome browser
         [Documentation]    Validate that the Resources tab is clickable and navigates to the resource page
         [Tags]    Functional Test
 
@@ -91,6 +92,34 @@ Validate Dymanic ID link
         element text should be    xpath=/html/body/section/div/ul/li[1]    Record button click.
         element text should be    xpath=/html/body/section/div/ul/li[2]    Then execute your test to make sure that ID is not used for button identification.
         element text should be    xpath=/html/body/section/div/h4[2]   Playground
+        click button    Button with Dynamic ID
+
+        #Post condition
+        close browser
+
+Validate Text Input link
+        [Documentation]    Validate that the Text Input link is clickable, that it navigates to the Text Input page and that the button text can be changed to something new
+        [Tags]    Functional Test
+
+        #Pre conditions
+        open browser    ${LOGIN URL}    ${BROWSER}
+        wait until page contains    UI Test Automation Playground
+
+        #Test case
+        #Validate Validate Text Input link
+        element text should be    xpath=//*[@id="overview"]/div/div[2]/div[4]/h3/a   Text Input
+        element text should be    xpath=//*[@id="overview"]/div/div[2]/div[4]/p    Entering text into an edit field may not have effect
+        click link    xpath=//*[@id="overview"]/div/div[2]/div[4]/h3/a
+
+        #Validate Text Input page
+        element text should be    xpath=/html/body/section/div/h3    Text Input
+        element text should be    xpath=/html/body/section/div/p   Entering text with physical keyboard can be different from sending DOM events to an element. This page is specifically desined to illustrate this problem. There are cases when attempts to set a text via DOM events lead to nowhere and the only way to proceed is to emulate real keyboard input at OS level.
+        element text should be    xpath=/html/body/section/div/h4[1]    Scenario
+        element text should be    xpath=/html/body/section/div/ul/li[1]    Record setting text into the input field and pressing the button.
+        element text should be    xpath=/html/body/section/div/ul/li[2]    Then execute your test to make sure that the button name is changing.
+        element text should be    xpath=/html/body/section/div/h4[2]   Playground
+        element text should be    xpath=/html/body/section/div/form/div/label    Set New Button Name
+
         click button    Button with Dynamic ID
 
         #Post condition
