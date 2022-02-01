@@ -21,6 +21,7 @@ Not only by displaying my hard and soft skill-sets, but also who I am as a Autom
 - Jenkins server created for test runs which has Jenkins + RF + Github integration.
 - Server will reach out to Github, grab scripts, pull down to server, and run locally in selected browser.
 - Jenkins will get the source code for test scripts from the Github repository.
+
 - Install Jenkins (http://jenkins.io) and follow all the prompts.
 - Open browser to https://localhost:8080/
 - Install RF plugin (Manage Jenkins> Manage plugins> Available)
