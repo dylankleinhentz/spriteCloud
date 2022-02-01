@@ -1,10 +1,11 @@
 # spriteCloudAssignment
 
-Amaze spriteCloud! By displaying not only my hard and soft skill-sets, but also who I am as a Automation Engineer!
+This project has been created to Amaze spriteCloud!
+Not only by displaying my hard and soft skill-sets, but also who I am as a Automation Engineer!
 
-Assignment Deliverables
+# Assignment Deliverables
 
-# a. How to run the tests locally
+# A. How to run the tests locally
 - Clone existing script repository from remote server to local machine.
 - Download Python (www.python.org) with pip installation
 - Install Robot Framework (cmd pip install robotframework)
@@ -16,19 +17,20 @@ Assignment Deliverables
 - Using pycharm go to File> Settings> Version Control> Github> Login to Github account
 
 
-# b. How to run the test in a CI/CD pipeline;
-- Master only setup. Jenkins server created for test runs which has Jenkins + RF + Git integration
-- Server will reach out to Git, grab scripts, pull down to server, and run locally in selected browser.
-- Jenkins will get the source code for test scripts from the Git repository
+# B. How to run the test in a CI/CD pipeline;
+- Jenkins server created for test runs which has Jenkins + RF + Github integration.
+- Server will reach out to Github, grab scripts, pull down to server, and run locally in selected browser.
+- Jenkins will get the source code for test scripts from the Github repository.
 - Install Jenkins (http://jenkins.io) and follow all the prompts.
-- Open brwoser to localhost:8080/
+- Open browser to https://localhost:8080/
 - Install RF plugin (Manage Jenkins> Manage plugins> Available)
 - 
 
 
-# c. Has a link to the results in Calliope.pro;
+# C. Has a link to the results in Calliope.pro;
+https://app.calliope.pro/reports/116185
 
-# d. Describe one improvement point and one new feature for the Calliope.pro platform;
+# D. Describe one improvement point and one new feature for the Calliope.pro platform;
 
 Improvement:
 - No Login link/button ontop of Calliope.pro home page, only a Signup link/button. Login link/button is only displayed at the bottom of the Home page.
@@ -36,11 +38,11 @@ Improvement:
 One new feature:
 - Add a dashboard page functionallity wheres a user can manage (Add, Remove, Edit) the panels displayed on the dashboard. 
 
-# e. What you used to select the scenarios, what was your approach?;
+# E. What you used to select the scenarios, what was your approach?;
 
-# f. Why are they the most important;
+# F. Why are they the most important;
 
-# g. What could be the next steps to your project;
+# G. What could be the next steps to your project;
 Next steps to the spriteCloud project would be:
 - To fully integrate Calliope.pro into the projects Jenkins and Github pipeline.
 - To increase test coverage.
