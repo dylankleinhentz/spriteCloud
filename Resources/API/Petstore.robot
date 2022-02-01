@@ -32,3 +32,4 @@ Add Pet
     ${response}=    POST  url=${url}/pet    json=${body}    #header=${header}
     #Validate Response
     Status Should Be    200
+    Status Should Be    200
