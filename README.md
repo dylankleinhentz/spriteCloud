@@ -5,6 +5,15 @@ Not only by displaying my hard and soft skill-sets, but also who I am as a Autom
 
 # Assignment Deliverables
 
+- Environment and specs:
+
+        ○  http://www.uitestingplayground.com/ (UI)
+        ○  https://petstore.swagger.io/ (API)
+- Scripting language: Python.
+- Required testing tool: Pycharm, Selenium, Robot Framework.
+- CI platform: Jenkins and Github.
+- Calliope.pro account created.
+-
 # A. How to run the tests locally
 - Clone existing script repository from remote server to local machine.
 - Download Python (www.python.org) with pip installation
@@ -18,21 +27,23 @@ Not only by displaying my hard and soft skill-sets, but also who I am as a Autom
 - The file directory path will be displayed. Type in "robot tests" and hit enter/return.
 - The test cases should start running locally.
 
-# B. How to run the test in a CI/CD pipeline;
+# B. How to run the test in a CI/CD pipeline
 - Jenkins server created for test runs which has Jenkins + RF + Github integration.
 - Server will reach out to Github, grab scripts, pull down to server, and run locally in selected browser.
 - Jenkins will get the source code for test scripts from the Github repository.
-Pre-conditions: Jenkins is already installed.
+
+Pre-condition: Jenkins is already installed.
 - Open browser and login with user credentials
-        - Username: spriteCloudUser
-        - Password: spriteCloud1234
+
+        - Username: spriteCloudUser        
+        - Password: spriteCloud1234        
 - Once logged in, execute the run by clicking "Build schedule"
 - View results once build is complete
 
-# C. Has a link to the results in Calliope.pro;
+# C. Has a link to the results in Calliope.pro
 https://app.calliope.pro/reports/116185
 
-# D. Describe one improvement point and one new feature for the Calliope.pro platform;
+# D. Describe one improvement point and one new feature for the Calliope.pro platform
 
 Improvement:
 - No Login link/button ontop of Calliope.pro home page, only a Signup link/button. Login link/button is only displayed at the bottom of the Home page.
@@ -40,11 +51,11 @@ Improvement:
 One new feature:
 - Add a dashboard page functionallity wheres a user can manage (Add, Remove, Edit) the panels displayed on the dashboard. 
 
-# E. What you used to select the scenarios, what was your approach?;
+# E. What you used to select the scenarios, what was your approach?
 
-# F. Why are they the most important;
+# F. Why are they the most important
 
-# G. What could be the next steps to your project;
+# G. What could be the next steps to your project
 Next steps to the spriteCloud project would be:
 - To fully integrate Calliope.pro into the projects Jenkins and Github pipeline.
 - To increase test coverage.
