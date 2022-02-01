@@ -13,9 +13,10 @@ Not only by displaying my hard and soft skill-sets, but also who I am as a Autom
 - Install request library for API requests (cmd pip install robotframework-requests)
 - Install selenium webdrivers (create c:\bin, add to PATH (Advanced systems settings> environment variables> add new path) selenium.org to download drivers)
 - Install Pycharm IDE (jetbrains.com> tools> pycharm> download now) and IntelliBot plugin (file> settings> plugin> IntelliBot)
-- Pycharm community edtion main page, click on "Check out from Version Control"> Select Github
-- Using pycharm go to File> Settings> Version Control> Github> Login to Github account
-
+- Pycharm community edtion main page, click on "File> Open" and select the master directory file cloned into a file from Github.
+- Expand the "Terminal" tab at the bottom.
+- The file directory path will be displayed. Type in "robot tests" and hit enter/return.
+- The test cases should start running locally.
 
 # B. How to run the test in a CI/CD pipeline;
 - Jenkins server created for test runs which has Jenkins + RF + Github integration.
@@ -27,7 +28,6 @@ Pre-conditions: Jenkins is already installed.
         - Password: spriteCloud1234
 - Once logged in, execute the run by clicking "Build schedule"
 - View results once build is complete
-
 
 # C. Has a link to the results in Calliope.pro;
 https://app.calliope.pro/reports/116185
@@ -53,4 +53,3 @@ Next steps to the spriteCloud project would be:
 - To manage and maintain CI/CD pipeline.
 - To provide assistance to those who will be using the project and adding to the automation coverage.
 - To maintain documentation of project.
-
