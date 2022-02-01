@@ -1,35 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220201 08:52:58.695" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220201 14:48:43.725" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="C:\Development\robot-scripts\spriteCloud\tests">
 <suite id="s1-s1" name="API Tests" source="C:\Development\robot-scripts\spriteCloud\tests\API_Tests.robot">
 <test id="s1-s1-t1" name="Get all available pets in the Petstore">
 <kw name="Available Pets" library="Petstore">
-<kw name="GET" library="RequestsLibrary">
-<var>${response}</var>
+<kw name="GE">
+<var>${response}=</var>
 <arg>url=${url}/pet/findByStatus?status=available</arg>
-<doc>Sends a GET request.</doc>
-<msg timestamp="20220201 08:53:00.622" level="INFO">GET Request : url=https://petstore.swagger.io/v2/pet/findByStatus?status=available 
- path_url=/v2/pet/findByStatus?status=available 
- headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
- </msg>
-<msg timestamp="20220201 08:53:00.622" level="INFO">GET Response : url=https://petstore.swagger.io/v2/pet/findByStatus?status=available 
- status=200, reason=OK 
- headers={'Date': 'Tue, 01 Feb 2022 06:53:00 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
- body=[{"id":1241,"category":{"id":1231414,"name":"yuri category"},"name":"yuri pet","photoUrls":["teste"],"tags":[{"id":124124,"name":"yuri tag"}],"status":"available"},{"id":816,"name":"Easton","photoUrls":[],"tags":[],"status":"available"},{"id":866,"name":"Otis","photoUrls":[],"tags":[],"status":"available"},{"id":112233,"category":{"id":30,"name":"Eq-dog"},"name":"Postman","photoUrls":["URLLink"],"tags":[{"id":10,"name":"Doberman"}],"status":"available"},{"id":15,"name":"Jevon","photoUrls":[],"tags":[],"status":"available"},{"id":348,"name":"Elinore","photoUrls":[],"tags":[],"status":"available"},{"id":270,"name":"Nick","photoUrls":[],"tags":[],"status":"available"},{"id":696,"name":"Agustin","photoUrls":[],"tags":[],"status":"available"},{"id":501875,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":501876,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042131,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":287263876825,"name":"Sharik","photoUrls":[],"tags":[],"status":"available"},{"id":618,"name":"Albertha","photoUrls":[],"tags":[],"status":"available"},{"id":957,"name":"Percival","photoUrls":[],"tags":[],"status":"available"},{"id":546,"name":"Tony","photoUrls":[],"tags":[],"status":"available"},{"id":545,"name":"Sydnie","photoUrls":[],"tags":[],"status":"available"},{"id":9222968140491042132,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042133,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042134,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042135,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042136,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042137,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042138,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042139,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042140,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042141,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140491042142,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":150,"category":{"id":0,"name":"cat"},"name":"Tom","photoUrls":["path"],"tags":[{"id":0,"name":"some-tag"}],"status":"available"},{"id":9222968140497180179,"category":{"id":0,"name":"string"},"name":"test","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180187,"category":{"id":1,"name":"CSS"},"name":"doggie3","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":840,"name":"Jesse","photoUrls":[],"tags":[],"status":"available"},{"id":662,"name":"Joanne","photoUrls":[],"tags":[],"status":"available"},{"id":671,"name":"Roman","photoUrls":[],"tags":[],"status":"available"},{"id":661,"name":"Oleta","photoUrls":[],"tags":[],"status":"available"},{"id":536,"name":"Everett","photoUrls":[],"tags":[],"status":"available"},{"id":110,"name":"Dorothea","photoUrls":[],"tags":[],"status":"available"},{"id":785,"name":"Sandy","photoUrls":[],"tags":[],"status":"available"},{"id":226,"name":"Emile","photoUrls":[],"tags":[],"status":"available"},{"id":235,"name":"Alta","photoUrls":[],"tags":[],"status":"available"},{"id":888,"name":"Luciano","photoUrls":[],"tags":[],"status":"available"},{"id":327,"name":"Tamara","photoUrls":[],"tags":[],"status":"available"},{"id":149,"name":"Dorthy","photoUrls":[],"tags":[],"status":"available"},{"id":600,"name":"Brendon","photoUrls":[],"tags":[],"status":"available"},{"id":450,"name":"Cory","photoUrls":[],"tags":[],"status":"available"},{"id":9222968140497180197,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180198,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180200,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180201,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180202,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180203,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9222968140497180204,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":9223372000001087016,"category":{"id":0,"name":"string"},"name":"Puff","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":8,"name":"Twila","photoUrls":[],"tags":[],"status":"available"},{"id":475,"name":"Eudora","photoUrls":[],"tags":[],"status":"available"},{"id":997,"name":"Marielle","photoUrls":[],"tags":[],"status":"available"},{"id":497,"name":"Brooks","photoUrls":[],"tags":[],"status":"available"},{"id":808,"name":"Lue","photoUrls":[],"tags":[],"status":"available"},{"id":224,"category":{"id":8,"name":"Humsters"},"name":"Petrushka","photoUrls":["url"],"tags":[{"id":3,"name":"black"}],"status":"available"},{"id":469,"name":"Jensen","photoUrls":[],"tags":[],"status":"available"},{"id":162,"name":"Garry","photoUrls":[],"tags":[],"status":"available"},{"id":520,"name":"Arnulfo","photoUrls":[],"tags":[],"status":"available"},{"id":125,"name":"Kathleen","photoUrls":[],"tags":[],"status":"available"},{"id":972,"name":"Hazle","photoUrls":[],"tags":[],"status":"available"},{"id":921,"name":"Cyrus","photoUrls":[],"tags":[],"status":"available"},{"id":850,"name":"Lisandro","photoUrls":[],"tags":[],"status":"available"},{"id":392,"name":"Jameson","photoUrls":[],"tags":[],"status":"available"},{"id":139,"name":"Norberto","photoUrls":[],"tags":[],"status":"available"},{"id":379,"name":"Nichole","photoUrls":[],"tags":[],"status":"available"},{"id":906,"name":"Mallie","photoUrls":[],"tags":[],"status":"available"},{"id":861,"name":"Alexanne","photoUrls":[],"tags":[],"status":"available"},{"id":874,"name":"Adelbert","photoUrls":[],"tags":[],"status":"available"},{"id":467,"name":"Humberto","photoUrls":[],"tags":[],"status":"available"},{"id":291,"name":"Ashton","photoUrls":[],"tags":[],"status":"available"},{"id":502,"name":"Gardner","photoUrls":[],"tags":[],"status":"available"},{"id":873,"name":"Yazmin","photoUrls":[],"tags":[],"status":"available"},{"id":405,"name":"Vena","photoUrls":[],"tags":[],"status":"available"},{"id":208,"name":"Janice","photoUrls":[],"tags":[],"status":"available"},{"id":947,"name":"Myriam","photoUrls":[],"tags":[],"status":"available"},{"id":904,"name":"Mabelle","photoUrls":[],"tags":[],"status":"available"},{"id":367,"name":"Alaina","photoUrls":[],"tags":[],"status":"available"},{"id":727,"name":"London","photoUrls":[],"tags":[],"status":"available"},{"id":963,"name":"Hans","photoUrls":[],"tags":[],"status":"available"},{"id":638,"name":"Krystel","photoUrls":[],"tags":[],"status":"available"},{"id":442,"name":"Marcellus","photoUrls":[],"tags":[],"status":"available"},{"id":417,"name":"Hazle","photoUrls":[],"tags":[],"status":"available"},{"id":871,"name":"Berenice","photoUrls":[],"tags":[],"status":"available"},{"id":396,"name":"Zachary","photoUrls":[],"tags":[],"status":"available"},{"id":969,"name":"Adolfo","photoUrls":[],"tags":[],"status":"available"},{"id":357,"name":"Maeve","photoUrls":[],"tags":[],"status":"available"},{"id":294,"name":"Eunice","photoUrls":[],"tags":[],"status":"available"},{"id":44,"name":"Astrid","photoUrls":[],"tags":[],"status":"available"},{"id":998,"name":"Lolita","photoUrls":[],"tags":[],"status":"available"},{"id":789,"name":"Tanner","photoUrls":[],"tags":[],"status":"available"},{"id":851,"name":"Carleton","photoUrls":[],"tags":[],"status":"available"},{"id":821,"name":"Carmel","photoUrls":[],"tags":[],"status":"available"},{"id":480,"name":"Milan","photoUrls":[],"tags":[],"status":"available"},{"id":345,"name":"Lily","photoUrls":[],"tags":[],"status":"available"},{"id":583,"name":"Bessie","photoUrls":[],"tags":[],"status":"available"},{"id":286,"name":"Joshuah","photoUrls":[],"tags":[],"status":"available"},{"id":20,"category":{"id":0,"name":"dog"},"name":"nuevaMASCOTA","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"available"},{"id":918,"name":"Ted","photoUrls":[],"tags":[],"status":"available"},{"id":960,"name":"Antonette","photoUrls":[],"tags":[],"status":"available"},{"id":33,"name":"Justine","photoUrls":[],"tags":[],"status":"available"},{"id":202,"name":"Cecile","photoUrls":[],"tags":[],"status":"available"},{"id":938,"name":"Audrey","photoUrls":[],"tags":[]... (set the log level to DEBUG or TRACE to see the full content) 
- </msg>
-<msg timestamp="20220201 08:53:00.622" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220201 08:52:59.038" endtime="20220201 08:53:00.622"/>
+<msg timestamp="20220201 14:48:44.038" level="FAIL">No keyword with name 'GE' found. Did you mean:
+    RequestsLibrary.GET</msg>
+<status status="FAIL" starttime="20220201 14:48:44.038" endtime="20220201 14:48:44.038"/>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20220201 08:53:00.622" endtime="20220201 08:53:00.622"/>
+<status status="NOT RUN" starttime="20220201 14:48:44.038" endtime="20220201 14:48:44.038"/>
 </kw>
-<status status="PASS" starttime="20220201 08:52:59.038" endtime="20220201 08:53:00.622"/>
+<status status="FAIL" starttime="20220201 14:48:44.038" endtime="20220201 14:48:44.038"/>
 </kw>
 <tag>API</tag>
-<status status="PASS" starttime="20220201 08:52:59.038" endtime="20220201 08:53:00.622"/>
+<status status="FAIL" starttime="20220201 14:48:44.038" endtime="20220201 14:48:44.038">No keyword with name 'GE' found. Did you mean:
+    RequestsLibrary.GET</status>
 </test>
 <test id="s1-s1-t2" name="Get all pending pets in the Petstore">
 <kw name="Pending Pets" library="Petstore">
@@ -37,28 +28,28 @@
 <var>${response}</var>
 <arg>url=${url}/pet/findByStatus?status=pending</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20220201 08:53:01.590" level="INFO">GET Request : url=https://petstore.swagger.io/v2/pet/findByStatus?status=pending 
+<msg timestamp="20220201 14:48:44.960" level="INFO">GET Request : url=https://petstore.swagger.io/v2/pet/findByStatus?status=pending 
  path_url=/v2/pet/findByStatus?status=pending 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20220201 08:53:01.590" level="INFO">GET Response : url=https://petstore.swagger.io/v2/pet/findByStatus?status=pending 
+<msg timestamp="20220201 14:48:44.960" level="INFO">GET Response : url=https://petstore.swagger.io/v2/pet/findByStatus?status=pending 
  status=200, reason=OK 
- headers={'Date': 'Tue, 01 Feb 2022 06:53:01 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
- body=[{"id":34111957,"category":{"id":-86892175,"name":"dolor commodo labori"},"name":"doggie","photoUrls":["cupidat","pariatur adipisicing nulla"],"tags":[{"id":-58990681,"name":"ut ex officia in"},{"id":8069285,"name":"elit nostrud"}],"status":"pending"},{"id":41675076,"category":{"id":39746630,"name":"non sint in Excepteur"},"name":"doggie","photoUrls":["pariatur","Duis est"],"tags":[{"id":3036439,"name":"eu ea labore irure"},{"id":24399010,"name":"officia commodo ipsum nulla ut"}],"status":"pending"},{"id":22682241,"category":{"id":-59916304,"name":"velit in ullamco"},"name":"doggie","photoUrls":["do eiusmod dolore","consectetur dolore"],"tags":[{"id":-23403866,"name":"magna sunt dolore aliquip"},{"id":27710317,"name":"cillum elit id"}],"status":"pending"},{"id":65648924,"category":{"id":-75866789,"name":"ullamco tempor mollit est"},"name":"doggie","photoUrls":["ea eu labore Excepteur velit","culpa"],"tags":[{"id":-34771998,"name":"nostrud aliqua"},{"id":41419092,"name":"id dolor ea"}],"status":"pending"},{"id":1234567890,"name":"Lessi","photoUrls":[],"tags":[],"status":"pending"},{"id":96967794,"category":{"id":-70401199,"name":"ex"},"name":"doggie","photoUrls":["eiusmod do","no"],"tags":[{"id":93202135,"name":"elit officia culpa in"},{"id":-33417756,"name":"ea do quis"}],"status":"pending"},{"id":70468829,"category":{"id":30918535,"name":"mollit cillum officia aute"},"name":"doggie","photoUrls":["aute ut ex incididunt cillum","veniam esse exercitation"],"tags":[{"id":3742233,"name":"et deserunt"},{"id":-22661485,"name":"laboris in veniam"}],"status":"pending"},{"id":91262545,"category":{"id":-49461899,"name":"fugiat sunt ut eu"},"name":"doggie","photoUrls":["amet dol","in commodo nulla ullamco"],"tags":[{"id":-87068465,"name":"do commodo laborum proident"},{"id":50904034,"name":"irure "}],"status":"pending"},{"id":34553147,"category":{"id":68135452,"name":"fugiat"},"name":"doggie","photoUrls":["sed enim nulla Lorem","nisi sed"],"tags":[{"id":-44253888,"name":"dolor Ut tempor mag"},{"id":-20916651,"name":"elit proident qui"}],"status":"pending"},{"id":36283902,"category":{"id":-99845220,"name":"irure"},"name":"doggie","photoUrls":["labore adipisicing commodo qui","eiusmod officia consectetur Ut"],"tags":[{"id":5742204,"name":"dolore pariatur sed enim"},{"id":-93988061,"name":"in est eiusmod"}],"status":"pending"},{"id":80745630,"category":{"id":-77423658,"name":"labore officia"},"name":"doggie","photoUrls":["aliqua D","enim elit"],"tags":[{"id":9968674,"name":"fugiat"},{"id":-98096807,"name":"dolor ex qui ut veniam"}],"status":"pending"},{"id":85511961,"category":{"id":68506377,"name":"proident"},"name":"doggie","photoUrls":["amet qui","sit esse proident"],"tags":[{"id":59545911,"name":"esse"},{"id":-9426251,"name":"incididunt tempor in laboris"}],"status":"pending"},{"id":1721117,"category":{"id":-67196814,"name":"dolore"},"name":"doggie","photoUrls":["incididunt quis deserunt","est cillum quis"],"tags":[{"id":98465031,"name":"ea commodo"},{"id":-99302631,"name":"in"}],"status":"pending"},{"id":53868678,"category":{"id":41814781,"name":"dolor "},"name":"doggie","photoUrls":["mollit culpa in rep","cupidatat"],"tags":[{"id":67974040,"name":"minim culpa nulla"},{"id":-74842126,"name":"mollit ipsum anim"}],"status":"pending"},{"id":11713142,"category":{"id":-31588987,"name":"nostrud"},"name":"doggie","photoUrls":["Lorem aliquip qui irure","culpa ipsum mollit minim"],"tags":[{"id":-788505,"name":"ut cillum a"},{"id":-15136834,"name":"sint"}],"status":"pending"},{"id":3564252,"category":{"id":-4069482,"name":"id in voluptate"},"name":"doggie","photoUrls":["commodo occaecat al","in ut adipisicing magna eiusmod"],"tags":[{"id":-6123200,"name":"incididunt nulla sunt"},{"id":47890197,"name":"Ut dolor"}],"status":"pending"},{"id":124,"category":{"id":124,"name":"jimmy"},"name":"jimmy","photoUrls":[],"tags":[{"id":124,"name":"jimmy"}],"status":"pending"},{"id":9223372000001087321,"category":{"id":93785,"name":"crocodilia"},"name":"crocodilia","photoUrls":["string"],"tags":[{"id":93785,"name":"crocodilia"}],"status":"pending"},{"id":81723614,"category":{"id":-35894100,"name":"sit reprehenderit fugiat amet aliqua"},"name":"doggie","photoUrls":["occaecat nostrud dolore fugiat tempor","id est"],"tags":[{"id":-85885711,"name":"pariatur labore Lorem"},{"id":-37987020,"name":"v"}],"status":"pending"}] 
+ headers={'Date': 'Tue, 01 Feb 2022 12:48:45 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
+ body=[{"id":81723614,"category":{"id":-35894100,"name":"sit reprehenderit fugiat amet aliqua"},"name":"doggie","photoUrls":["occaecat nostrud dolore fugiat tempor","id est"],"tags":[{"id":-85885711,"name":"pariatur labore Lorem"},{"id":-37987020,"name":"v"}],"status":"pending"},{"id":29366791400,"category":{"id":29366791400,"name":"string"},"name":"koalabaerchen","photoUrls":["https://updatedurl.de"],"tags":[{"id":29366791400,"name":"string"}],"status":"pending"}] 
  </msg>
-<msg timestamp="20220201 08:53:01.590" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220201 08:53:00.637" endtime="20220201 08:53:01.590"/>
+<msg timestamp="20220201 14:48:44.960" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220201 14:48:44.038" endtime="20220201 14:48:44.960"/>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20220201 08:53:01.590" endtime="20220201 08:53:01.590"/>
+<status status="PASS" starttime="20220201 14:48:44.960" endtime="20220201 14:48:44.960"/>
 </kw>
-<status status="PASS" starttime="20220201 08:53:00.622" endtime="20220201 08:53:01.590"/>
+<status status="PASS" starttime="20220201 14:48:44.038" endtime="20220201 14:48:44.960"/>
 </kw>
 <tag>API</tag>
-<status status="PASS" starttime="20220201 08:53:00.622" endtime="20220201 08:53:01.590"/>
+<status status="PASS" starttime="20220201 14:48:44.038" endtime="20220201 14:48:44.960"/>
 </test>
 <test id="s1-s1-t3" name="Get all sold pets in the Petstore">
 <kw name="Sold Pets" library="Petstore">
@@ -66,28 +57,28 @@
 <var>${response}</var>
 <arg>url=${url}/pet/findByStatus?status=sold</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20220201 08:53:02.590" level="INFO">GET Request : url=https://petstore.swagger.io/v2/pet/findByStatus?status=sold 
+<msg timestamp="20220201 14:48:45.882" level="INFO">GET Request : url=https://petstore.swagger.io/v2/pet/findByStatus?status=sold 
  path_url=/v2/pet/findByStatus?status=sold 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20220201 08:53:02.590" level="INFO">GET Response : url=https://petstore.swagger.io/v2/pet/findByStatus?status=sold 
+<msg timestamp="20220201 14:48:45.882" level="INFO">GET Response : url=https://petstore.swagger.io/v2/pet/findByStatus?status=sold 
  status=200, reason=OK 
- headers={'Date': 'Tue, 01 Feb 2022 06:53:02 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
- body=[{"id":887,"name":"Rollin","photoUrls":[],"tags":[],"status":"sold"},{"id":452,"name":"Bruce","photoUrls":[],"tags":[],"status":"sold"},{"id":766,"name":"Stephen","photoUrls":[],"tags":[],"status":"sold"},{"id":589,"name":"Geoffrey","photoUrls":[],"tags":[],"status":"sold"},{"id":809,"name":"Riley","photoUrls":[],"tags":[],"status":"sold"},{"id":74,"name":"Oceane","photoUrls":[],"tags":[],"status":"sold"},{"id":775,"name":"Clementina","photoUrls":[],"tags":[],"status":"sold"},{"id":717,"name":"Brooke","photoUrls":[],"tags":[],"status":"sold"},{"id":523,"name":"Laron","photoUrls":[],"tags":[],"status":"sold"},{"id":289,"name":"Leanna","photoUrls":[],"tags":[],"status":"sold"},{"id":838,"name":"Kristian","photoUrls":[],"tags":[],"status":"sold"},{"id":34,"name":"Sammie","photoUrls":[],"tags":[],"status":"sold"},{"id":805,"name":"Blanca","photoUrls":[],"tags":[],"status":"sold"},{"id":137,"category":{"id":-37527884,"name":"sint id"},"name":"doggie_Elouise","photoUrls":["est sit nostrud enim","quis ea tempor"],"tags":[{"id":-34300994,"name":"aute nisi"},{"id":81419662,"name":"ea velit Duis"}],"status":"sold"},{"id":10001,"category":{"id":1,"name":"c"},"name":"doggie","photoUrls":[""],"tags":[{"id":1,"name":"dt"}],"status":"sold"},{"id":96,"category":{"id":-66403107,"name":"ut tempor"},"name":"doggie_Declan","photoUrls":["aute esse tempor do","ea ullamco voluptate qui"],"tags":[{"id":65303766,"name":"dolore"},{"id":-53642900,"name":"pariatur dolor"}],"status":"sold"},{"id":9223372000001087138,"category":{"id":34399793,"name":"aliqua in "},"name":"doggie","photoUrls":["non","minim deserunt Duis"],"tags":[{"id":-14930468,"name":"mollit Excepteur pariatur dolore consectetur"},{"id":-19410478,"name":"aliquip occaecat comm"}],"status":"sold"},{"id":70384428,"category":{"id":-17620187,"name":"adipisicing eu"},"name":"doggie","photoUrls":["velit quis ex magna","ullamco non fugiat"],"tags":[{"id":9808440,"name":"id sunt anim tempor"},{"id":-8108782,"name":"culpa minim ullamco"}],"status":"sold"},{"id":131313,"category":{"id":1313,"name":"Bulldog"},"name":"Snowy Joe","photoUrls":[" "],"tags":[{"id":131313,"name":"Snowy"}],"status":"sold"},{"id":363,"category":{"id":-66403107,"name":"ut tempor"},"name":"doggie_Dion","photoUrls":["aute esse tempor do","ea ullamco voluptate qui"],"tags":[{"id":65303766,"name":"dolore"},{"id":-53642900,"name":"pariatur dolor"}],"status":"sold"},{"id":437,"category":{"id":-66403107,"name":"ut tempor"},"name":"doggie_Kay","photoUrls":["aute esse tempor do","ea ullamco voluptate qui"],"tags":[{"id":65303766,"name":"dolore"},{"id":-53642900,"name":"pariatur dolor"}],"status":"sold"},{"id":664,"category":{"id":-66403107,"name":"ut tempor"},"name":"doggie_Libbie","photoUrls":["aute esse tempor do","ea ullamco voluptate qui"],"tags":[{"id":65303766,"name":"dolore"},{"id":-53642900,"name":"pariatur dolor"}],"status":"sold"},{"id":681,"category":{"id":-66403107,"name":"ut tempor"},"name":"doggie_Florine","photoUrls":["aute esse tempor do","ea ullamco voluptate qui"],"tags":[{"id":65303766,"name":"dolore"},{"id":-53642900,"name":"pariatur dolor"}],"status":"sold"},{"id":57161049,"category":{"id":80362683,"name":"minim culpa ullamco nulla"},"name":"doggie","photoUrls":["non officia minim commodo irure","mollit"],"tags":[{"id":2464845,"name":"aliqua dolor"},{"id":3570873,"name":"minim"}],"status":"sold"},{"id":10971162,"category":{"id":-20322943,"name":"anim pariatur Lorem ad ut"},"name":"doggie","photoUrls":["dolore","officia adipisicing ipsum sit enim"],"tags":[{"id":-69747998,"name":"anim minim"},{"id":77466470,"name":"incididunt minim sunt anim ex"}],"status":"sold"},{"id":38480305,"category":{"id":-59161747,"name":"Duis voluptate consequat"},"name":"doggie","photoUrls":["ex enim ","nisi est"],"tags":[{"id":49121599,"name":"non anim exercitation"},{"id":2672065,"name":"sint"}],"status":"sold"},{"id":258,"category":{"id":0,"name":"Dog"},"name":"Dog","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":22061989,"category":{"id":74991505,"name":"22222222222"},"name":"doggie","photoUrls":["ea commodo magna consectetur","in id eiusmod"],"tags":[{"id":65746043,"name":"dolor sint123"},{"id":-8134129,"name":"gled"}],"status":"sold"},{"id":23327731,"category":{"id":-92357313,"name":"reprehenderit ut nostrud ut"},"name":"doggie","photoUrls":["Lorem laboris","laboris"],"tags":[{"id":89386643,"name":"elit esse cillum"},{"id":-23396785,"name":"minim consectetur"}],"status":"sold"},{"id":61941448,"category":{"id":-50713620,"name":"ut mollit nulla"},"name":"doggie","photoUrls":["id enim","ipsum ullamco officia"],"tags":[{"id":-79252701,"name":"est sunt"},{"id":4674489,"name":"eiusmod"}],"status":"sold"},{"id":82188160,"category":{"id":81640824,"name":"nisi exercitation reprehenderit dolore"},"name":"doggie","photoUrls":["proident eu enim","mollit cillum nisi"],"tags":[{"id":6316356,"name":"laborum magn"},{"id":73149614,"name":"veniam fugiat amet si"}],"status":"sold"},{"id":49199499,"category":{"id":20305865,"name":"et cupidatat nisi incididunt"},"name":"doggie","photoUrls":["sunt esse consequat","Ut nostrud anim adipisicing"],"tags":[{"id":33995919,"name":"tempor non nostrud"},{"id":-54707686,"name":"qui pariatur"}],"status":"sold"},{"id":610,"category":{"id":4396,"name":"Mammalia"},"name":"Erin","photoUrls":["http://placeimg.com/640/480/cats"],"tags":[{"id":0,"name":"Yundtport"},{"id":1,"name":"Norfolk Island"}],"status":"sold"},{"id":15435006001660,"category":{"id":2432432,"name":"category_name"},"name":"5239423","photoUrls":["test URL"],"tags":[{"id":5,"name":"fact tag"}],"status":"sold"},{"id":7574746,"category":{"id":1,"name":"Cat"},"name":"Hardy","photoUrls":["https://i.pinimg.com/originals/5c/2c/44/5c2c44f16da1caf134c00bc4f9c72ea0.jpg"],"tags":[{"id":7805,"name":"Mainecoon"}],"status":"sold"}] 
+ headers={'Date': 'Tue, 01 Feb 2022 12:48:45 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
+ body=[{"id":70384428,"category":{"id":-17620187,"name":"adipisicing eu"},"name":"doggie","photoUrls":["velit quis ex magna","ullamco non fugiat"],"tags":[{"id":9808440,"name":"id sunt anim tempor"},{"id":-8108782,"name":"culpa minim ullamco"}],"status":"sold"},{"id":131313,"category":{"id":1313,"name":"Bulldog"},"name":"Snowy Joe","photoUrls":[" "],"tags":[{"id":131313,"name":"Snowy"}],"status":"sold"},{"id":57161049,"category":{"id":80362683,"name":"minim culpa ullamco nulla"},"name":"doggie","photoUrls":["non officia minim commodo irure","mollit"],"tags":[{"id":2464845,"name":"aliqua dolor"},{"id":3570873,"name":"minim"}],"status":"sold"},{"id":9223372000001087000,"category":{"id":0,"name":"string"},"name":"fish","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":10971162,"category":{"id":-20322943,"name":"anim pariatur Lorem ad ut"},"name":"doggie","photoUrls":["dolore","officia adipisicing ipsum sit enim"],"tags":[{"id":-69747998,"name":"anim minim"},{"id":77466470,"name":"incididunt minim sunt anim ex"}],"status":"sold"},{"id":38480305,"category":{"id":-59161747,"name":"Duis voluptate consequat"},"name":"doggie","photoUrls":["ex enim ","nisi est"],"tags":[{"id":49121599,"name":"non anim exercitation"},{"id":2672065,"name":"sint"}],"status":"sold"},{"id":22061989,"category":{"id":74991505,"name":"22222222222"},"name":"doggie","photoUrls":["ea commodo magna consectetur","in id eiusmod"],"tags":[{"id":65746043,"name":"dolor sint123"},{"id":-8134129,"name":"gled"}],"status":"sold"},{"id":23327731,"category":{"id":-92357313,"name":"reprehenderit ut nostrud ut"},"name":"doggie","photoUrls":["Lorem laboris","laboris"],"tags":[{"id":89386643,"name":"elit esse cillum"},{"id":-23396785,"name":"minim consectetur"}],"status":"sold"},{"id":61941448,"category":{"id":-50713620,"name":"ut mollit nulla"},"name":"doggie","photoUrls":["id enim","ipsum ullamco officia"],"tags":[{"id":-79252701,"name":"est sunt"},{"id":4674489,"name":"eiusmod"}],"status":"sold"},{"id":82188160,"category":{"id":81640824,"name":"nisi exercitation reprehenderit dolore"},"name":"doggie","photoUrls":["proident eu enim","mollit cillum nisi"],"tags":[{"id":6316356,"name":"laborum magn"},{"id":73149614,"name":"veniam fugiat amet si"}],"status":"sold"},{"id":49199499,"category":{"id":20305865,"name":"et cupidatat nisi incididunt"},"name":"doggie","photoUrls":["sunt esse consequat","Ut nostrud anim adipisicing"],"tags":[{"id":33995919,"name":"tempor non nostrud"},{"id":-54707686,"name":"qui pariatur"}],"status":"sold"},{"id":610,"category":{"id":4396,"name":"Mammalia"},"name":"Erin","photoUrls":["http://placeimg.com/640/480/cats"],"tags":[{"id":0,"name":"Yundtport"},{"id":1,"name":"Norfolk Island"}],"status":"sold"},{"id":15435006001660,"category":{"id":2432432,"name":"category_name"},"name":"5239423","photoUrls":["test URL"],"tags":[{"id":5,"name":"fact tag"}],"status":"sold"},{"id":12,"category":{"id":0,"name":"dogs"},"name":"Fido","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":23686702368670,"category":{"id":23686702368670,"name":""},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"},{"id":1313131312,"name":"Tommy","photoUrls":[],"tags":[],"status":"sold"},{"id":30273351,"category":{"id":-50160277,"name":"ea enim pariatur do"},"name":"doggie","photoUrls":["a","aliqua"],"tags":[{"id":27549507,"name":"id ipsum dolore"},{"id":11023455,"name":"in ex consequat culpa"}],"status":"sold"},{"id":9,"category":{"id":0,"name":"cats"},"name":"King Kong","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"sold"}] 
  </msg>
-<msg timestamp="20220201 08:53:02.590" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220201 08:53:01.590" endtime="20220201 08:53:02.590"/>
+<msg timestamp="20220201 14:48:45.882" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220201 14:48:44.975" endtime="20220201 14:48:45.882"/>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20220201 08:53:02.590" endtime="20220201 08:53:02.590"/>
+<status status="PASS" starttime="20220201 14:48:45.882" endtime="20220201 14:48:45.882"/>
 </kw>
-<status status="PASS" starttime="20220201 08:53:01.590" endtime="20220201 08:53:02.590"/>
+<status status="PASS" starttime="20220201 14:48:44.975" endtime="20220201 14:48:45.882"/>
 </kw>
 <tag>API</tag>
-<status status="PASS" starttime="20220201 08:53:01.590" endtime="20220201 08:53:02.590"/>
+<status status="PASS" starttime="20220201 14:48:44.975" endtime="20220201 14:48:45.882"/>
 </test>
 <test id="s1-s1-t4" name="Add pet to the Petstore">
 <kw name="Add Pet" library="Petstore">
@@ -96,39 +87,44 @@
 <arg>category:id=1</arg>
 <arg>category:name=DOG</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20220201 08:53:02.590" level="INFO">${body} = {'category:id': '1', 'category:name': 'DOG'}</msg>
-<status status="PASS" starttime="20220201 08:53:02.590" endtime="20220201 08:53:02.590"/>
+<msg timestamp="20220201 14:48:45.896" level="INFO">${body} = {'category:id': '1', 'category:name': 'DOG'}</msg>
+<status status="PASS" starttime="20220201 14:48:45.896" endtime="20220201 14:48:45.896"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
 <arg>url=${url}/pet</arg>
 <arg>json=${body}</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20220201 08:53:03.558" level="INFO">POST Request : url=https://petstore.swagger.io/v2/pet 
+<msg timestamp="20220201 14:48:46.803" level="INFO">POST Request : url=https://petstore.swagger.io/v2/pet 
  path_url=/v2/pet 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '44', 'Content-Type': 'application/json'} 
  body=b'{"category:id": "1", "category:name": "DOG"}' 
  </msg>
-<msg timestamp="20220201 08:53:03.558" level="INFO">POST Response : url=https://petstore.swagger.io/v2/pet 
+<msg timestamp="20220201 14:48:46.803" level="INFO">POST Response : url=https://petstore.swagger.io/v2/pet 
  status=200, reason=OK 
- headers={'Date': 'Tue, 01 Feb 2022 06:53:03 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
+ headers={'Date': 'Tue, 01 Feb 2022 12:48:46 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, DELETE, PUT', 'Access-Control-Allow-Headers': 'Content-Type, api_key, Authorization', 'Server': 'Jetty(9.2.9.v20150224)'} 
  body={"id":9223372036854775807,"photoUrls":[],"tags":[]} 
  </msg>
-<msg timestamp="20220201 08:53:03.558" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20220201 08:53:02.590" endtime="20220201 08:53:03.558"/>
+<msg timestamp="20220201 14:48:46.803" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220201 14:48:45.896" endtime="20220201 14:48:46.803"/>
 </kw>
 <kw name="Status Should Be" library="RequestsLibrary">
 <arg>200</arg>
 <doc>Fails if response status code is different than the expected.</doc>
-<status status="PASS" starttime="20220201 08:53:03.558" endtime="20220201 08:53:03.558"/>
+<status status="PASS" starttime="20220201 14:48:46.803" endtime="20220201 14:48:46.803"/>
 </kw>
-<status status="PASS" starttime="20220201 08:53:02.590" endtime="20220201 08:53:03.558"/>
+<kw name="Status Should Be" library="RequestsLibrary">
+<arg>200</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" starttime="20220201 14:48:46.803" endtime="20220201 14:48:46.803"/>
+</kw>
+<status status="PASS" starttime="20220201 14:48:45.896" endtime="20220201 14:48:46.803"/>
 </kw>
 <tag>API</tag>
-<status status="PASS" starttime="20220201 08:53:02.590" endtime="20220201 08:53:03.558"/>
+<status status="PASS" starttime="20220201 14:48:45.896" endtime="20220201 14:48:46.803"/>
 </test>
 <doc>These are some Petstore API tests for the spriteCloud TA Assignment</doc>
-<status status="PASS" starttime="20220201 08:52:58.726" endtime="20220201 08:53:03.558"/>
+<status status="FAIL" starttime="20220201 14:48:43.756" endtime="20220201 14:48:46.803"/>
 </suite>
 <suite id="s1-s2" name="UI Tests" source="C:\Development\robot-scripts\spriteCloud\tests\UI_Tests.robot">
 <test id="s1-s2-t1" name="Validate the UITAP tab">
@@ -139,60 +135,60 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220201 08:53:03.574" level="INFO">Opening browser 'Chrome' to base url 'http://www.uitestingplayground.com'.</msg>
-<status status="PASS" starttime="20220201 08:53:03.574" endtime="20220201 08:53:10.368"/>
+<msg timestamp="20220201 14:48:46.818" level="INFO">Opening browser 'Chrome' to base url 'http://www.uitestingplayground.com'.</msg>
+<status status="PASS" starttime="20220201 14:48:46.818" endtime="20220201 14:48:56.191"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>UI Test Automation Playground</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220201 08:53:10.368" endtime="20220201 08:53:10.387"/>
+<status status="PASS" starttime="20220201 14:48:56.191" endtime="20220201 14:48:56.208"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath=/html/body/nav/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220201 08:53:10.388" level="INFO">Clicking link 'xpath=/html/body/nav/a'.</msg>
-<status status="PASS" starttime="20220201 08:53:10.387" endtime="20220201 08:53:11.036"/>
+<msg timestamp="20220201 14:48:56.208" level="INFO">Clicking link 'xpath=/html/body/nav/a'.</msg>
+<status status="PASS" starttime="20220201 14:48:56.208" endtime="20220201 14:48:56.901"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>UI Test Automation Playground</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220201 08:53:11.036" endtime="20220201 08:53:11.049"/>
+<status status="PASS" starttime="20220201 14:48:56.901" endtime="20220201 14:48:56.913"/>
 </kw>
 <kw name="Page Should Contain Image" library="SeleniumLibrary">
 <arg>xpath=//*[@id="description"]/div/div/div[2]/img</arg>
 <doc>Verifies image identified by ``locator`` is found from current page.</doc>
-<msg timestamp="20220201 08:53:11.067" level="INFO">Current page contains image 'xpath=//*[@id="description"]/div/div/div[2]/img'.</msg>
-<status status="PASS" starttime="20220201 08:53:11.049" endtime="20220201 08:53:11.067"/>
+<msg timestamp="20220201 14:48:56.928" level="INFO">Current page contains image 'xpath=//*[@id="description"]/div/div/div[2]/img'.</msg>
+<status status="PASS" starttime="20220201 14:48:56.913" endtime="20220201 14:48:56.928"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//*[@id="citation"]/p</arg>
 <arg>Quality is not an act, it is a habit.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:11.068" level="INFO">Verifying element 'xpath=//*[@id="citation"]/p' contains exact text 'Quality is not an act, it is a habit.'.</msg>
-<status status="PASS" starttime="20220201 08:53:11.067" endtime="20220201 08:53:11.089"/>
+<msg timestamp="20220201 14:48:56.928" level="INFO">Verifying element 'xpath=//*[@id="citation"]/p' contains exact text 'Quality is not an act, it is a habit.'.</msg>
+<status status="PASS" starttime="20220201 14:48:56.928" endtime="20220201 14:48:56.947"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//*[@id="description"]/div/div/div[1]/div/span</arg>
 <arg>The purpose of this website is to provide a platform for sharpening UI test automation skills. Use it to practice with your test automation tool. Use it to learn test automation techniques.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:11.089" level="INFO">Verifying element 'xpath=//*[@id="description"]/div/div/div[1]/div/span' contains exact text 'The purpose of this website is to provide a platform for sharpening UI test automation skills. Use it to practice with your test automation tool. Use it to learn test automation techniques.'.</msg>
-<status status="PASS" starttime="20220201 08:53:11.089" endtime="20220201 08:53:11.110"/>
+<msg timestamp="20220201 14:48:56.948" level="INFO">Verifying element 'xpath=//*[@id="description"]/div/div/div[1]/div/span' contains exact text 'The purpose of this website is to provide a platform for sharpening UI test automation skills. Use it to practice with your test automation tool. Use it to learn test automation techniques.'.</msg>
+<status status="PASS" starttime="20220201 14:48:56.948" endtime="20220201 14:48:56.967"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//*[@id="description"]/div/div/div[1]/p</arg>
 <arg>Different automation pitfalls appearing in modern web applications are described and emulated below.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:11.110" level="INFO">Verifying element 'xpath=//*[@id="description"]/div/div/div[1]/p' contains exact text 'Different automation pitfalls appearing in modern web applications are described and emulated below.'.</msg>
-<status status="PASS" starttime="20220201 08:53:11.110" endtime="20220201 08:53:11.125"/>
+<msg timestamp="20220201 14:48:56.967" level="INFO">Verifying element 'xpath=//*[@id="description"]/div/div/div[1]/p' contains exact text 'Different automation pitfalls appearing in modern web applications are described and emulated below.'.</msg>
+<status status="PASS" starttime="20220201 14:48:56.967" endtime="20220201 14:48:56.987"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220201 08:53:11.125" endtime="20220201 08:53:13.372"/>
+<status status="PASS" starttime="20220201 14:48:56.987" endtime="20220201 14:48:59.183"/>
 </kw>
-<status status="PASS" starttime="20220201 08:53:03.574" endtime="20220201 08:53:13.372"/>
+<status status="PASS" starttime="20220201 14:48:46.818" endtime="20220201 14:48:59.183"/>
 </kw>
 <tag>UI Test</tag>
-<status status="PASS" starttime="20220201 08:53:03.574" endtime="20220201 08:53:13.372"/>
+<status status="PASS" starttime="20220201 14:48:46.818" endtime="20220201 14:48:59.183"/>
 </test>
 <test id="s1-s2-t2" name="Validate the Home tab">
 <kw name="Click on Home tab" library="UITestingPlayground">
@@ -202,60 +198,60 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220201 08:53:13.372" level="INFO">Opening browser 'Chrome' to base url 'http://www.uitestingplayground.com'.</msg>
-<status status="PASS" starttime="20220201 08:53:13.372" endtime="20220201 08:53:20.545"/>
+<msg timestamp="20220201 14:48:59.183" level="INFO">Opening browser 'Chrome' to base url 'http://www.uitestingplayground.com'.</msg>
+<status status="PASS" starttime="20220201 14:48:59.183" endtime="20220201 14:49:04.639"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>UI Test Automation Playground</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220201 08:53:20.546" endtime="20220201 08:53:20.583"/>
+<status status="PASS" starttime="20220201 14:49:04.640" endtime="20220201 14:49:04.677"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath=//*[@id="navbarSupportedContent"]/ul/li[1]/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220201 08:53:20.583" level="INFO">Clicking link 'xpath=//*[@id="navbarSupportedContent"]/ul/li[1]/a'.</msg>
-<status status="PASS" starttime="20220201 08:53:20.583" endtime="20220201 08:53:21.577"/>
+<msg timestamp="20220201 14:49:04.677" level="INFO">Clicking link 'xpath=//*[@id="navbarSupportedContent"]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20220201 14:49:04.677" endtime="20220201 14:49:05.339"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>UI Test Automation Playground</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220201 08:53:21.577" endtime="20220201 08:53:21.594"/>
+<status status="PASS" starttime="20220201 14:49:05.339" endtime="20220201 14:49:05.356"/>
 </kw>
 <kw name="Page Should Contain Image" library="SeleniumLibrary">
 <arg>xpath=//*[@id="description"]/div/div/div[2]/img</arg>
 <doc>Verifies image identified by ``locator`` is found from current page.</doc>
-<msg timestamp="20220201 08:53:21.614" level="INFO">Current page contains image 'xpath=//*[@id="description"]/div/div/div[2]/img'.</msg>
-<status status="PASS" starttime="20220201 08:53:21.594" endtime="20220201 08:53:21.614"/>
+<msg timestamp="20220201 14:49:05.374" level="INFO">Current page contains image 'xpath=//*[@id="description"]/div/div/div[2]/img'.</msg>
+<status status="PASS" starttime="20220201 14:49:05.356" endtime="20220201 14:49:05.374"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//*[@id="citation"]/p</arg>
 <arg>Quality is not an act, it is a habit.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:21.614" level="INFO">Verifying element 'xpath=//*[@id="citation"]/p' contains exact text 'Quality is not an act, it is a habit.'.</msg>
-<status status="PASS" starttime="20220201 08:53:21.614" endtime="20220201 08:53:21.640"/>
+<msg timestamp="20220201 14:49:05.375" level="INFO">Verifying element 'xpath=//*[@id="citation"]/p' contains exact text 'Quality is not an act, it is a habit.'.</msg>
+<status status="PASS" starttime="20220201 14:49:05.374" endtime="20220201 14:49:05.397"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//*[@id="description"]/div/div/div[1]/div/span</arg>
 <arg>The purpose of this website is to provide a platform for sharpening UI test automation skills. Use it to practice with your test automation tool. Use it to learn test automation techniques.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:21.640" level="INFO">Verifying element 'xpath=//*[@id="description"]/div/div/div[1]/div/span' contains exact text 'The purpose of this website is to provide a platform for sharpening UI test automation skills. Use it to practice with your test automation tool. Use it to learn test automation techniques.'.</msg>
-<status status="PASS" starttime="20220201 08:53:21.640" endtime="20220201 08:53:21.671"/>
+<msg timestamp="20220201 14:49:05.397" level="INFO">Verifying element 'xpath=//*[@id="description"]/div/div/div[1]/div/span' contains exact text 'The purpose of this website is to provide a platform for sharpening UI test automation skills. Use it to practice with your test automation tool. Use it to learn test automation techniques.'.</msg>
+<status status="PASS" starttime="20220201 14:49:05.397" endtime="20220201 14:49:05.415"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//*[@id="description"]/div/div/div[1]/p</arg>
 <arg>Different automation pitfalls appearing in modern web applications are described and emulated below.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:21.671" level="INFO">Verifying element 'xpath=//*[@id="description"]/div/div/div[1]/p' contains exact text 'Different automation pitfalls appearing in modern web applications are described and emulated below.'.</msg>
-<status status="PASS" starttime="20220201 08:53:21.671" endtime="20220201 08:53:21.687"/>
+<msg timestamp="20220201 14:49:05.415" level="INFO">Verifying element 'xpath=//*[@id="description"]/div/div/div[1]/p' contains exact text 'Different automation pitfalls appearing in modern web applications are described and emulated below.'.</msg>
+<status status="PASS" starttime="20220201 14:49:05.415" endtime="20220201 14:49:05.430"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220201 08:53:21.687" endtime="20220201 08:53:23.917"/>
+<status status="PASS" starttime="20220201 14:49:05.430" endtime="20220201 14:49:07.651"/>
 </kw>
-<status status="PASS" starttime="20220201 08:53:13.372" endtime="20220201 08:53:23.917"/>
+<status status="PASS" starttime="20220201 14:48:59.183" endtime="20220201 14:49:07.651"/>
 </kw>
 <tag>UI Test</tag>
-<status status="PASS" starttime="20220201 08:53:13.372" endtime="20220201 08:53:23.917"/>
+<status status="PASS" starttime="20220201 14:48:59.183" endtime="20220201 14:49:07.651"/>
 </test>
 <test id="s1-s2-t3" name="Validate the Resource tab">
 <kw name="Click on Resources tab" library="UITestingPlayground">
@@ -265,68 +261,68 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220201 08:53:23.932" level="INFO">Opening browser 'Chrome' to base url 'http://www.uitestingplayground.com'.</msg>
-<status status="PASS" starttime="20220201 08:53:23.932" endtime="20220201 08:53:32.128"/>
+<msg timestamp="20220201 14:49:07.651" level="INFO">Opening browser 'Chrome' to base url 'http://www.uitestingplayground.com'.</msg>
+<status status="PASS" starttime="20220201 14:49:07.651" endtime="20220201 14:49:12.453"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>UI Test Automation</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220201 08:53:32.129" endtime="20220201 08:53:32.154"/>
+<status status="PASS" starttime="20220201 14:49:12.453" endtime="20220201 14:49:12.495"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220201 08:53:32.154" level="INFO">Clicking link 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a'.</msg>
-<status status="PASS" starttime="20220201 08:53:32.154" endtime="20220201 08:53:32.901"/>
+<msg timestamp="20220201 14:49:12.495" level="INFO">Clicking link 'xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20220201 14:49:12.495" endtime="20220201 14:49:13.200"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Resources</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220201 08:53:32.901" endtime="20220201 08:53:32.923"/>
+<status status="PASS" starttime="20220201 14:49:13.200" endtime="20220201 14:49:13.221"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=/html/body/section/div/h3</arg>
 <arg>Resources</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:32.923" level="INFO">Verifying element 'xpath=/html/body/section/div/h3' contains exact text 'Resources'.</msg>
-<status status="PASS" starttime="20220201 08:53:32.923" endtime="20220201 08:53:32.939"/>
+<msg timestamp="20220201 14:49:13.221" level="INFO">Verifying element 'xpath=/html/body/section/div/h3' contains exact text 'Resources'.</msg>
+<status status="PASS" starttime="20220201 14:49:13.221" endtime="20220201 14:49:13.246"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=/html/body/section/div/h4[1]</arg>
 <arg>Learning</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:32.939" level="INFO">Verifying element 'xpath=/html/body/section/div/h4[1]' contains exact text 'Learning'.</msg>
-<status status="PASS" starttime="20220201 08:53:32.939" endtime="20220201 08:53:32.970"/>
+<msg timestamp="20220201 14:49:13.246" level="INFO">Verifying element 'xpath=/html/body/section/div/h4[1]' contains exact text 'Learning'.</msg>
+<status status="PASS" starttime="20220201 14:49:13.246" endtime="20220201 14:49:13.276"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=/html/body/section/div/h4[2]</arg>
 <arg>Standards</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:32.970" level="INFO">Verifying element 'xpath=/html/body/section/div/h4[2]' contains exact text 'Standards'.</msg>
-<status status="PASS" starttime="20220201 08:53:32.970" endtime="20220201 08:53:32.986"/>
+<msg timestamp="20220201 14:49:13.277" level="INFO">Verifying element 'xpath=/html/body/section/div/h4[2]' contains exact text 'Standards'.</msg>
+<status status="PASS" starttime="20220201 14:49:13.276" endtime="20220201 14:49:13.296"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=/html/body/section/div/h4[3]</arg>
 <arg>Articles</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:32.986" level="INFO">Verifying element 'xpath=/html/body/section/div/h4[3]' contains exact text 'Articles'.</msg>
-<status status="PASS" starttime="20220201 08:53:32.986" endtime="20220201 08:53:33.001"/>
+<msg timestamp="20220201 14:49:13.297" level="INFO">Verifying element 'xpath=/html/body/section/div/h4[3]' contains exact text 'Articles'.</msg>
+<status status="PASS" starttime="20220201 14:49:13.296" endtime="20220201 14:49:13.313"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=/html/body/section/div/h4[4]</arg>
 <arg>Community</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:33.001" level="INFO">Verifying element 'xpath=/html/body/section/div/h4[4]' contains exact text 'Community'.</msg>
-<status status="PASS" starttime="20220201 08:53:33.001" endtime="20220201 08:53:33.017"/>
+<msg timestamp="20220201 14:49:13.313" level="INFO">Verifying element 'xpath=/html/body/section/div/h4[4]' contains exact text 'Community'.</msg>
+<status status="PASS" starttime="20220201 14:49:13.313" endtime="20220201 14:49:13.329"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220201 08:53:33.017" endtime="20220201 08:53:35.241"/>
+<status status="PASS" starttime="20220201 14:49:13.329" endtime="20220201 14:49:15.544"/>
 </kw>
-<status status="PASS" starttime="20220201 08:53:23.932" endtime="20220201 08:53:35.241"/>
+<status status="PASS" starttime="20220201 14:49:07.651" endtime="20220201 14:49:15.544"/>
 </kw>
 <tag>UI Test</tag>
-<status status="PASS" starttime="20220201 08:53:23.917" endtime="20220201 08:53:35.241"/>
+<status status="PASS" starttime="20220201 14:49:07.651" endtime="20220201 14:49:15.544"/>
 </test>
 <test id="s1-s2-t4" name="Validate the Dynamic ID link">
 <kw name="Validate Dymanic ID link" library="UITestingPlayground">
@@ -336,107 +332,107 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220201 08:53:35.241" level="INFO">Opening browser 'Chrome' to base url 'http://www.uitestingplayground.com'.</msg>
-<status status="PASS" starttime="20220201 08:53:35.241" endtime="20220201 08:53:42.845"/>
+<msg timestamp="20220201 14:49:15.544" level="INFO">Opening browser 'Chrome' to base url 'http://www.uitestingplayground.com'.</msg>
+<status status="PASS" starttime="20220201 14:49:15.544" endtime="20220201 14:49:21.445"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>UI Test Automation Playground</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220201 08:53:42.846" endtime="20220201 08:53:42.870"/>
+<status status="PASS" starttime="20220201 14:49:21.446" endtime="20220201 14:49:21.473"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//*[@id="overview"]/div/div[1]/div[1]/h3/a</arg>
 <arg>Dynamic ID</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:42.870" level="INFO">Verifying element 'xpath=//*[@id="overview"]/div/div[1]/div[1]/h3/a' contains exact text 'Dynamic ID'.</msg>
-<status status="PASS" starttime="20220201 08:53:42.870" endtime="20220201 08:53:42.898"/>
+<msg timestamp="20220201 14:49:21.473" level="INFO">Verifying element 'xpath=//*[@id="overview"]/div/div[1]/div[1]/h3/a' contains exact text 'Dynamic ID'.</msg>
+<status status="PASS" starttime="20220201 14:49:21.473" endtime="20220201 14:49:21.508"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//*[@id="overview"]/div/div[1]/div[1]/p</arg>
 <arg>Make sure you are not recording dynamic IDs of elements</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:42.898" level="INFO">Verifying element 'xpath=//*[@id="overview"]/div/div[1]/div[1]/p' contains exact text 'Make sure you are not recording dynamic IDs of elements'.</msg>
-<status status="PASS" starttime="20220201 08:53:42.898" endtime="20220201 08:53:42.920"/>
+<msg timestamp="20220201 14:49:21.508" level="INFO">Verifying element 'xpath=//*[@id="overview"]/div/div[1]/div[1]/p' contains exact text 'Make sure you are not recording dynamic IDs of elements'.</msg>
+<status status="PASS" starttime="20220201 14:49:21.508" endtime="20220201 14:49:21.529"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath=//*[@id="overview"]/div/div[1]/div[1]/h3/a</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220201 08:53:42.920" level="INFO">Clicking link 'xpath=//*[@id="overview"]/div/div[1]/div[1]/h3/a'.</msg>
-<status status="PASS" starttime="20220201 08:53:42.920" endtime="20220201 08:53:43.582"/>
+<msg timestamp="20220201 14:49:21.529" level="INFO">Clicking link 'xpath=//*[@id="overview"]/div/div[1]/div[1]/h3/a'.</msg>
+<status status="PASS" starttime="20220201 14:49:21.529" endtime="20220201 14:49:22.239"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=/html/body/section/div/h3</arg>
 <arg>Dynamic ID</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:43.582" level="INFO">Verifying element 'xpath=/html/body/section/div/h3' contains exact text 'Dynamic ID'.</msg>
-<status status="PASS" starttime="20220201 08:53:43.582" endtime="20220201 08:53:43.607"/>
+<msg timestamp="20220201 14:49:22.241" level="INFO">Verifying element 'xpath=/html/body/section/div/h3' contains exact text 'Dynamic ID'.</msg>
+<status status="PASS" starttime="20220201 14:49:22.240" endtime="20220201 14:49:22.263"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=/html/body/section/div/p</arg>
 <arg>Modern applications often generate dynamic IDs for elements. In this case ID is not a reliable attribute for using in element selector. By default many UI automation tools record IDs and this results in tests broken from the very beginning. An automation tool needs a way to instruct it to skip dynamic IDs when XPath is generated for an element.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:43.607" level="INFO">Verifying element 'xpath=/html/body/section/div/p' contains exact text 'Modern applications often generate dynamic IDs for elements. In this case ID is not a reliable attribute for using in element selector. By default many UI automation tools record IDs and this results in tests broken from the very beginning. An automation tool needs a way to instruct it to skip dynamic IDs when XPath is generated for an element.'.</msg>
-<status status="PASS" starttime="20220201 08:53:43.607" endtime="20220201 08:53:43.640"/>
+<msg timestamp="20220201 14:49:22.263" level="INFO">Verifying element 'xpath=/html/body/section/div/p' contains exact text 'Modern applications often generate dynamic IDs for elements. In this case ID is not a reliable attribute for using in element selector. By default many UI automation tools record IDs and this results in tests broken from the very beginning. An automation tool needs a way to instruct it to skip dynamic IDs when XPath is generated for an element.'.</msg>
+<status status="PASS" starttime="20220201 14:49:22.263" endtime="20220201 14:49:22.294"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=/html/body/section/div/h4[1]</arg>
 <arg>Scenario</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:43.640" level="INFO">Verifying element 'xpath=/html/body/section/div/h4[1]' contains exact text 'Scenario'.</msg>
-<status status="PASS" starttime="20220201 08:53:43.640" endtime="20220201 08:53:43.659"/>
+<msg timestamp="20220201 14:49:22.294" level="INFO">Verifying element 'xpath=/html/body/section/div/h4[1]' contains exact text 'Scenario'.</msg>
+<status status="PASS" starttime="20220201 14:49:22.294" endtime="20220201 14:49:22.316"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=/html/body/section/div/ul/li[1]</arg>
 <arg>Record button click.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:43.659" level="INFO">Verifying element 'xpath=/html/body/section/div/ul/li[1]' contains exact text 'Record button click.'.</msg>
-<status status="PASS" starttime="20220201 08:53:43.659" endtime="20220201 08:53:43.670"/>
+<msg timestamp="20220201 14:49:22.316" level="INFO">Verifying element 'xpath=/html/body/section/div/ul/li[1]' contains exact text 'Record button click.'.</msg>
+<status status="PASS" starttime="20220201 14:49:22.316" endtime="20220201 14:49:22.334"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=/html/body/section/div/ul/li[2]</arg>
 <arg>Then execute your test to make sure that ID is not used for button identification.</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:43.670" level="INFO">Verifying element 'xpath=/html/body/section/div/ul/li[2]' contains exact text 'Then execute your test to make sure that ID is not used for button identification.'.</msg>
-<status status="PASS" starttime="20220201 08:53:43.670" endtime="20220201 08:53:43.686"/>
+<msg timestamp="20220201 14:49:22.334" level="INFO">Verifying element 'xpath=/html/body/section/div/ul/li[2]' contains exact text 'Then execute your test to make sure that ID is not used for button identification.'.</msg>
+<status status="PASS" starttime="20220201 14:49:22.334" endtime="20220201 14:49:22.344"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=/html/body/section/div/h4[2]</arg>
 <arg>Playground</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220201 08:53:43.686" level="INFO">Verifying element 'xpath=/html/body/section/div/h4[2]' contains exact text 'Playground'.</msg>
-<status status="PASS" starttime="20220201 08:53:43.686" endtime="20220201 08:53:43.717"/>
+<msg timestamp="20220201 14:49:22.344" level="INFO">Verifying element 'xpath=/html/body/section/div/h4[2]' contains exact text 'Playground'.</msg>
+<status status="PASS" starttime="20220201 14:49:22.344" endtime="20220201 14:49:22.360"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Button with Dynamic ID</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220201 08:53:43.717" level="INFO">Clicking button 'Button with Dynamic ID'.</msg>
-<status status="PASS" starttime="20220201 08:53:43.717" endtime="20220201 08:53:43.766"/>
+<msg timestamp="20220201 14:49:22.360" level="INFO">Clicking button 'Button with Dynamic ID'.</msg>
+<status status="PASS" starttime="20220201 14:49:22.360" endtime="20220201 14:49:22.428"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220201 08:53:43.767" endtime="20220201 08:53:45.972"/>
+<status status="PASS" starttime="20220201 14:49:22.428" endtime="20220201 14:49:24.651"/>
 </kw>
-<status status="PASS" starttime="20220201 08:53:35.241" endtime="20220201 08:53:45.972"/>
+<status status="PASS" starttime="20220201 14:49:15.544" endtime="20220201 14:49:24.651"/>
 </kw>
 <tag>UI Test</tag>
-<status status="PASS" starttime="20220201 08:53:35.241" endtime="20220201 08:53:45.972"/>
+<status status="PASS" starttime="20220201 14:49:15.544" endtime="20220201 14:49:24.651"/>
 </test>
 <doc>This is some basic info about the whole suite</doc>
-<status status="PASS" starttime="20220201 08:53:03.558" endtime="20220201 08:53:45.987"/>
+<status status="PASS" starttime="20220201 14:48:46.803" endtime="20220201 14:49:24.651"/>
 </suite>
-<status status="PASS" starttime="20220201 08:52:58.695" endtime="20220201 08:53:45.987"/>
+<status status="FAIL" starttime="20220201 14:48:43.725" endtime="20220201 14:49:24.667"/>
 </suite>
 <statistics>
 <total>
-<stat pass="8" fail="0" skip="0">All Tests</stat>
+<stat pass="7" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="4" fail="0" skip="0">API</stat>
+<stat pass="3" fail="1" skip="0">API</stat>
 <stat pass="4" fail="0" skip="0">UI Test</stat>
 </tag>
 <suite>
-<stat pass="8" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="4" fail="0" skip="0" id="s1-s1" name="API Tests">Tests.API Tests</stat>
+<stat pass="7" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="3" fail="1" skip="0" id="s1-s1" name="API Tests">Tests.API Tests</stat>
 <stat pass="4" fail="0" skip="0" id="s1-s2" name="UI Tests">Tests.UI Tests</stat>
 </suite>
 </statistics>
