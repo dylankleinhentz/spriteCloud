@@ -12,7 +12,7 @@ Not only by displaying my hard and soft skill-sets, but also who I am as a Autom
 - Install seleniumlibrary (cmd pip install robotframework-seleniumlibrary)
 - Install request library for API requests (cmd pip install robotframework-requests)
 - Install selenium webdrivers (create c:\bin, add to PATH (Advanced systems settings> environment variables> add new path) selenium.org to download drivers)
-- Install Pycharm IDE (jetbrains.com> tools> pycharm> download now) and IntelliBot plugin (file> settings> plugin> IntelliBot 
+- Install Pycharm IDE (jetbrains.com> tools> pycharm> download now) and IntelliBot plugin (file> settings> plugin> IntelliBot)
 - Pycharm community edtion main page, click on "Check out from Version Control"> Select Github
 - Using pycharm go to File> Settings> Version Control> Github> Login to Github account
 
@@ -21,11 +21,12 @@ Not only by displaying my hard and soft skill-sets, but also who I am as a Autom
 - Jenkins server created for test runs which has Jenkins + RF + Github integration.
 - Server will reach out to Github, grab scripts, pull down to server, and run locally in selected browser.
 - Jenkins will get the source code for test scripts from the Github repository.
-
-- Install Jenkins (http://jenkins.io) and follow all the prompts.
-- Open browser to https://localhost:8080/
-- Install RF plugin (Manage Jenkins> Manage plugins> Available)
-- 
+Pre-conditions: Jenkins is already installed.
+- Open browser and login with user credentials
+        - Username: spriteCloudUser
+        - Password: spriteCloud1234
+- Once logged in, execute the run by clicking "Build schedule"
+- View results once build is complete
 
 
 # C. Has a link to the results in Calliope.pro;
