@@ -16,11 +16,6 @@ Not only by displaying my hard and soft skill-sets, but also who I am as a Autom
 -
 # A. How to run the tests locally
 - Clone existing script repository zip file from Github to local machine.
-- Extract to a folder location.
-- Open commard prompt (cmd).
-- Type cd followed by the path of the file location and hit return. eg (C:\Users\dylan\Documents\spriteCloud-master)
-- Type in "robot -d results tests" and hit return.
-- 
 - Download Python (www.python.org) with pip installation
 - Install Robot Framework (cmd pip install robotframework)
 - Install seleniumlibrary (cmd pip install robotframework-seleniumlibrary)
