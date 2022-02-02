@@ -23,20 +23,12 @@ Validate the Resource tab in chrome browser
         [Tags]    UI Test
         Click on Resources tab in chrome browser
 
-Validate the UITAP tab in ie browser
-        [Tags]    UI Test
-        Click on UITAP tab in ie browser
-
-Validate the Home tab in ie browser
-        [Tags]    UI Test
-        Click on Home tab tab in ie browser
-
-Validate the Resource tab in ie browser
-        [Tags]    UI Test
-        Click on Resources tab tab in ie browser
-
 Validate the Dynamic ID link
         [Tags]    UI Test
         Validate Dymanic ID link
+
+Validate the Test Input link
+        [Tags]    UI Test
+        Validate Text Input link
 
 *** Keywords ***

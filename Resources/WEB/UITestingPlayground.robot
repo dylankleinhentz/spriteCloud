@@ -119,8 +119,9 @@ Validate Text Input link
         element text should be    xpath=/html/body/section/div/ul/li[2]    Then execute your test to make sure that the button name is changing.
         element text should be    xpath=/html/body/section/div/h4[2]   Playground
         element text should be    xpath=/html/body/section/div/form/div/label    Set New Button Name
-
-        click button    Button with Dynamic ID
+        input text    id=newButtonName    Testing Button
+        click button    xpath=//*[@id="updatingButton"]
+        element text should be    xpath=//*[@id="updatingButton"]    Testing Button
 
         #Post condition
         close browser
