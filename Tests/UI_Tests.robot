@@ -1,6 +1,8 @@
 *** Settings ***
 Documentation    This is some basic info about the whole suite
 Resource    ../Resources/Web/UITestingPlayground.robot
+Documentation    These are some UITestingPlayground UI tests for the spriteCloud TA Assignment
+Resource    ../Resources/WEB/UITestingPlayground.robot
 
 # Many ways to run
 # robot -d results/web tests/UI_Tests.robot
