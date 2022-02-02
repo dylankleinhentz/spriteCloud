@@ -2,11 +2,9 @@
 Library    RequestsLibrary
 Library    SeleniumLibrary
 
-#Suite Setup    Create Session    petstore    url=https://petstore.swagger.io/v2/pet/findByStatus
 *** Variables ***
 ${LOGIN URL}      http://www.uitestingplayground.com
 ${BROWSER}        chrome
-
 
 *** Keywords ***
 Click on UITAP tab in chrome browser
@@ -62,6 +60,7 @@ Click on Resources tab in chrome browser
         #Test case
         click link    xpath=//*[@id="navbarSupportedContent"]/ul/li[2]/a
         wait until page contains  Resources
+        #Validate elements
         element text should be    xpath=/html/body/section/div/h3    Resources
         element text should be    xpath=/html/body/section/div/h4[1]    Learning
         element text should be    xpath=/html/body/section/div/h4[2]    Standards
@@ -119,8 +118,10 @@ Validate Text Input link
         element text should be    xpath=/html/body/section/div/ul/li[2]    Then execute your test to make sure that the button name is changing.
         element text should be    xpath=/html/body/section/div/h4[2]   Playground
         element text should be    xpath=/html/body/section/div/form/div/label    Set New Button Name
+        #Input text
         input text    id=newButtonName    Testing Button
         click button    xpath=//*[@id="updatingButton"]
+        #Validate text
         element text should be    xpath=//*[@id="updatingButton"]    Testing Button
 
         #Post condition
