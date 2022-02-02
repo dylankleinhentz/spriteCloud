@@ -10,6 +10,10 @@ Resource    ../Resources/API/Petstore.robot
 *** Variables ***
 
 *** Test Cases ***
+Add a new user to the Petstore system
+    [Tags]    API
+    Add User
+
 Get all available pets in the Petstore
     [Tags]    API
     Available Pets
