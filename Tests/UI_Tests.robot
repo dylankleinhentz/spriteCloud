@@ -30,5 +30,3 @@ Validate the Dynamic ID link
 Validate the Test Input link
         [Tags]    UI Test
         Validate Text Input link
-
-*** Keywords ***
