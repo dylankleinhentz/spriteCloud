@@ -13,7 +13,7 @@ Not only by displaying my hard and soft skill-sets, but also who I am as a Autom
 - Required testing tool: Pycharm, Selenium, Robot Framework.
 - CI platform: Jenkins and Github.
 - Calliope.pro account created.
--
+
 # A. How to run the tests locally
 - Clone existing script repository zip file from Github to local machine.
 - Download Python (www.python.org) with pip installation
@@ -32,7 +32,7 @@ Not only by displaying my hard and soft skill-sets, but also who I am as a Autom
 - Server will reach out to Github, grab scripts, pull down to server, and run locally in selected browser.
 - Jenkins will get the source code for test scripts from the Github repository.
 
-Pre-condition: Jenkins is already installed with robot plugin.
+Pre-condition: Jenkins is already installed and configured.
 - Open browser and login with user credentials
 
         - Username: spriteCloudUser        
