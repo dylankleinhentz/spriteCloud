@@ -27,6 +27,6 @@ Validate the Dynamic ID link
         [Tags]    UI Test
         Validate Dymanic ID link
 
-Validate the Test Input link
+Validate the Text Input link
         [Tags]    UI Test
         Validate Text Input link
