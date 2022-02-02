@@ -85,6 +85,7 @@ Validate Dymanic ID link
         click link    xpath=//*[@id="overview"]/div/div[1]/div[1]/h3/a
 
         #Validate Dynamic ID page
+        wait until page contains    Dynamic ID
         element text should be    xpath=/html/body/section/div/h3    Dynamic ID
         element text should be    xpath=/html/body/section/div/p   Modern applications often generate dynamic IDs for elements. In this case ID is not a reliable attribute for using in element selector. By default many UI automation tools record IDs and this results in tests broken from the very beginning. An automation tool needs a way to instruct it to skip dynamic IDs when XPath is generated for an element.
         element text should be    xpath=/html/body/section/div/h4[1]    Scenario
