@@ -32,7 +32,7 @@ Not only by displaying my hard and soft skill-sets, but also who I am as a Autom
 - Server will reach out to Github, grab scripts, pull down to server, and run locally in selected browser.
 - Jenkins will get the source code for test scripts from the Github repository.
 
-Pre-condition: Jenkins is already installed.
+Pre-condition: Jenkins is already installed with robot plugin.
 - Open browser and login with user credentials
 
         - Username: spriteCloudUser        
