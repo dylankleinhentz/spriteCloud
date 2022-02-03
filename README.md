@@ -59,6 +59,8 @@ One new feature:
 - Add a dashboard page functionallity wheres a user can manage (Add, Remove, Edit) the panels displayed on the dashboard. 
 
 # E. What you used to select the scenarios, what was your approach?
+Please see UI and API test plans attached to repository.
+
 UI Test cases:
 For the purpose of this assignment, only the Chrome browser was used for UI automation testing.
 UI testing involves making sure the user interface handles keyboard and mouse interactions, and checking that visual elements are displayed and working correctly.
